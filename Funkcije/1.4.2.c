@@ -1,4 +1,4 @@
-/*sa dodatnom dodatnom promenljivom int tipa*/
+/*sa dodatnom dodatnom promenljivom int tipa u mainu u koju se smesta rezltat koji vraca funkcija*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
