@@ -1,4 +1,4 @@
-/*bez dodatne promenljive koja prima rezultat od funcije min*/
+/*bez dodatne promenljive koja prima rezultat koji vraca funcija min*/
 #include <stdio.h>
 #include <stdlib.h>
 int minimum(int x,int y,int z)
