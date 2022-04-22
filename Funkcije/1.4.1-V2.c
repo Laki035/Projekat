@@ -3,13 +3,13 @@
 #include <stdlib.h>
 int minimum(int x,int y,int z)
 {
-    if(x<=y&&x<=z)
+    if((x<=y)&&(x<=z))
         return x;
     else
-        if(y<=x&&y<=z)
+        if((y<=x)&&(y<=z))
             return y;
         else
-   if(z<=x&&z<=y)
+   if((z<=x)&&(z<=y))
             return z;
 }
 
