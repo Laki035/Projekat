@@ -12,7 +12,6 @@ int minimum(int x,int y,int z)
             if((z<=x)&&(z<=y))
                 return z;
 }
-
 int main()
 {
     int a,b,c;
