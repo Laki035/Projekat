@@ -1,4 +1,4 @@
-/*Za sve situacije trazenje minimumu i za slucaj  ako hocete da unosite i iste brojeve ovo se moze koristiti za sve situacije*/
+/*Za sve situacije trazenje minimumu i za slucaj  ako hocete da unosite i iste brojeve ovo resenje se moze koristiti za sve situacije*/
 #include <stdio.h>
 #include <stdlib.h>
 void minimum()
