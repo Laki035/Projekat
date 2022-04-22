@@ -37,13 +37,13 @@ return n;
 void main() 
 {
   int n=1,p;
-  p:
+  pocetak:
   printf("Unesite poziciju\n: ");
   scanf("%d", &p);
   if (p <= 0) 
   {
     printf("Neispravan unos pozicija mora biti veca od 0\n");
-    goto p;
+    goto pocetak;
   }
     while (1<2) 
     {
