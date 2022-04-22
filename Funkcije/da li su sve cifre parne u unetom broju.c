@@ -1,3 +1,4 @@
+/*ispitivanje da li su u unetom broju sve cifre parne*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -15,7 +16,7 @@ int  sve_parne_cifre(x)
 	if(bc==bp)
 		return 1;
 	else
-		 return 0;
+		return 0;
 }
 int main() 
 {
