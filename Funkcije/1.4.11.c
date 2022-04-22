@@ -1,3 +1,4 @@
+/*trazenje da li se uneta cifra sadrzi u zapisu celog broja*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -24,7 +25,7 @@ int main()
 	p:
 	printf("unesi jednocifreni broj k\n");
 	scanf("%d",&c);
-	if(c>=0 && c<10)
+	if((c>=0) && (c<10))
 	{
 		if(sadrzi(n,c)==1)
 			printf("broj %d sadrzi u sebi broj %d",n,c);
