@@ -23,7 +23,6 @@ int armstrong(int n)
 		s=s+stepen(m%10,brc);
 		m=m/10;
 	}
-	
 	if(n==s)
 		return 1;
 	else
