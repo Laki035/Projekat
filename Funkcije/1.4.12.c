@@ -1,3 +1,4 @@
+/*odredjivanje broja neparnih cifara u unetom broj n sve dok se ne unese 0 verzija sa beskonacnom petljom i break naredbom*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
