@@ -1,3 +1,4 @@
+/*Ispitivanje da li je broj armstrongov*/
 #include <stdio.h>
 #include <stdlib.h>
 int stepen(int k, int n)
