@@ -1,11 +1,12 @@
+/*ispitivanje dal su sve cifre u unetom broju jednake.c*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 int sve_cifre_jednake(int x)
 {
 	int c;
-	x=abs(x);
-	c=x%10;
+	c=abs(x)%10;
+	x=abs(x)/10;
 	while(x>0)
 	{
 		if((x%10)!=c)
