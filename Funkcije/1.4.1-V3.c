@@ -1,3 +1,4 @@
+/*sve se radi u minimimumu u ainu samo poziv funkcije minimum*/
 #include <stdio.h>
 #include <stdlib.h>
 void minimum()
