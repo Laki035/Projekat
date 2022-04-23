@@ -1,4 +1,4 @@
-/*basic verzija ispitivanje da li su cifre u unetom broju par nepar orijentisane*/
+/*basic verzija ispitivanje da li su cifre u unetom broju idu cik cak par nepar*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
