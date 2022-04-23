@@ -13,9 +13,9 @@ int neopadajuce(int x)
 		if((x%10)>pc)
 		{
 			indikator=1;
-            break;
+                        break;
 		}
-        pc=x%10;
+            pc=x%10;
 		x=x/10;
 	}
 	return indikator;
