@@ -6,7 +6,10 @@ int sadrzi(int n,int c )
 	while(n>0)
 	{
 		if(n%10==c)
+		{
 			br++;
+			break;
+		}
 		n=n/10;
 	}
 	if(br==0)
