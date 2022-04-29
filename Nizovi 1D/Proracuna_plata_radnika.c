@@ -10,13 +10,13 @@ void main()
 	int i;
 	for(i=0;i<n;i++)
    	{
-       printf("unesi broj_sati za %d. radnika\n",i+1);
-       scanf("%f",&broj_sati[i]);
-       plata_radnika[i]=broj_sati[i]*cena_radnog_sata;
+	       printf("unesi broj_sati za %d. radnika\n",i+1);
+	       scanf("%f",&broj_sati[i]);
+	       plata_radnika[i]=broj_sati[i]*cena_radnog_sata;
    	}
 	for(i=0;i<n;i++)
    	{
-       printf("plata %d. radnika je %0.2f dinara",i+1,plata_radnika[i]);
-       printf("\n");
+	       printf("plata %d. radnika je %0.2f dinara",i+1,plata_radnika[i]);
+	       printf("\n");
    	}
 }
