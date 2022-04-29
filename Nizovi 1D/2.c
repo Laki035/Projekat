@@ -1,3 +1,0 @@
-printf("pera")
-zika
-lazav
