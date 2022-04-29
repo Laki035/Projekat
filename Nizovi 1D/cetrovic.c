@@ -1,3 +1,0 @@
-pera peric
-fdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdf
-dfd
