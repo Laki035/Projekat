@@ -14,7 +14,6 @@ void main()
     for(i=0;i<n-1;i++)
     {
         if(a[i]>a[i+1])
-            printf("a [%d] = %d",i,a[i]);
-            printf("\n");
+            printf("a [%d] = %d\n",i,a[i]);
     }
 }
