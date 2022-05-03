@@ -1,6 +1,0 @@
-peraperic;
-jhdfjhdjfhdj;
-kdfhkdhfkdfh;
-fdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdf;
-kjkjfkdjfkdj;
-dfd;

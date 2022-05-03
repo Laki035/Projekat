@@ -13,6 +13,7 @@ void main()
     }
     for(i=0;i<n;i++)
     {
-       printf("a[%d] = %d\n",i,a[i]);
+        if(i%2==0)
+            printf("a [%d] = %d\n",i,a[i]);
     }
 }
