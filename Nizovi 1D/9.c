@@ -19,7 +19,6 @@ void ispis_niza(int a[],int n)
 }
 void sortiraj_opadajuce(int a[],int n)
 {
-        int i;
          printf("a[%d]=%d\n",i,a[i]);
 }
 void sortiraj_rastuce(int a[],int n)
