@@ -17,14 +17,33 @@ void ispis_niza(int a[],int n)
          printf("a[%d]=%d",i,a[i]);
     }
 }
-int suma_niza(int a[],int n)
+void sortiraj_opadajuce(int a[],int n)
 {
-    int i,s=0;
-    for(i=0;i<n;i++)
-    {
-        s+=a[i]; /*skraceni zapis od s=s+a[i];*/
-    }
-    return s;
+    int i,j,t;
+    for(i=0;i<n-1;i++)
+        for(j=i+1;j<n;j++)
+            {
+                if(a[j]>a[i])
+                    {
+                        t=a[i];
+                        a[i]=a[j];
+                        a[j]=t;
+                    }
+            }
+}
+void sortiraj_rastuce(int a[],int n)
+{
+    int i,j,t;
+    for(i=0;i<n-1;i++)
+        for(j=i+1;j<n;j++)
+            {
+                if(a[j]<a[i])
+                    {
+                        t=a[i];
+                        a[i]=a[j];
+                        a[j]=t;
+                    }
+            }
 }
 void main()
 {
@@ -34,5 +53,7 @@ void main()
     int a[n];
     unos_niza(a,n);
     ispis_niza(a,n);
-    printf("\n suma niza je %d",suma_niza(a,n));
+    printf("\n niz posle sortirasnja\n");
+    sortiraj_opadajuce(a,n);
+    ispis_niza(a,n);
 }
