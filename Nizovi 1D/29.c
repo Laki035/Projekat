@@ -41,6 +41,6 @@ void main()
     int a[n];
     unos_niza(a,n);
     ispis_niza(a,n);
-    printf("aritmeticka sredina elemenata sa parnim indeksom je %.3f",aritmeticka_pi(a,n));
+    printf("/naritmeticka sredina elemenata sa parnim indeksom je %.3f",aritmeticka_pi(a,n));
 }
 
