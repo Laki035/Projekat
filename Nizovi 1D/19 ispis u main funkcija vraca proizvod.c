@@ -36,7 +36,7 @@ void main()
     int a[n];
     unos_niza(a,n);
     ispis_niza(a,n);
-    printf("proizvod elemenata niza sa parnim indeksom je %d",proizvod_clanova_niza_sa_pi(a,n););
+    printf("proizvod elemenata niza sa parnim indeksom je %d",proizvod_clanova_niza_sa_pi(a,n));
   
 }
 

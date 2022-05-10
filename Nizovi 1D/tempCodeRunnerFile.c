@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include<stdio.h>
 #include<stdlib.h>
 void unos_niza(int a[],int n)
 {
@@ -17,7 +17,7 @@ void ispis_niza(int a[],int n)
          printf("a[%d]=%d",i,a[i]);
     }
 }
-void proizvod_clanova_niza_sa_pi(int a[],int n)
+int proizvod_clanova_niza_sa_pi(int a[],int n)
 {
     int i,p=1;
     for(i=0;i<n;i++)
@@ -25,7 +25,8 @@ void proizvod_clanova_niza_sa_pi(int a[],int n)
         if(i%2==0)
             p*=a[i]; /*skraceni zapis od p=p*a[i];*/
     }
-    printf("proizvod elemenata niza sa parnim indeksom je %d",p);
+    return p;
+   
 }
 void main()
 {
@@ -35,6 +36,7 @@ void main()
     int a[n];
     unos_niza(a,n);
     ispis_niza(a,n);
-    proizvod_clanova_niza_sa_pi(a,n);
-   // printf("\n suma parnih elemanta niza je %d",suma_parnih_clanova_niza(a,n));
+    printf("proizvod elemenata niza sa parnim indeksom je %d",proizvod_clanova_niza_sa_pi(a,n));
+  
 }
+
