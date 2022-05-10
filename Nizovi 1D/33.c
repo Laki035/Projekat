@@ -17,21 +17,20 @@ void ispis_niza(int a[],int n)
          printf("a[%d]=%d",i,a[i]);
     }
 }
-float aritmeticka_pi(int a[],int n)
+void negativni(int a[],int n)
 {
-    int i,bp=0,s=0
-    float asp;
+    int i,indikator=0;
     for(i=0;i<n;i++)
     {
-        if(i%2==0)
+        if(a[i]<0)
         {
-            bp++;
-            s+=a[i];
+            printf("\n ima negativni i to je element a[%d]=%d",i,a[i]);
+            indikator =1;
+            break;
         }
-            
     }
-    asp=1.0*s/bp;
-    return asp;
+    if(indikator==0)
+         printf("/n nema negativnih");
 }
 void main()
 {
@@ -41,6 +40,6 @@ void main()
     int a[n];
     unos_niza(a,n);
     ispis_niza(a,n);
-    printf("aritmeticka sredina elemenata sa parnim indeksom je %.3f",aritmeticka_pi(a,n));
+    negativni(a,n);
 }
 
