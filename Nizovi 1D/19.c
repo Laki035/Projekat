@@ -36,5 +36,4 @@ void main()
     unos_niza(a,n);
     ispis_niza(a,n);
     proizvod_clanova_niza_sa_pi(a,n);
-   // printf("\n suma parnih elemanta niza je %d",suma_parnih_clanova_niza(a,n));
 }
