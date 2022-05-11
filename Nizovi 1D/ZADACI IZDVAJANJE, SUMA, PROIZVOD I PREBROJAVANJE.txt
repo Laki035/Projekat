@@ -1,0 +1,29 @@
+1. Učitiat i ispisati niz. 
+2. Učitati članove niza. Ispisati: članove niza koji su veći od svog sledećeg člana. 
+3. Učitati članove niza. Ispisati članove niza sa parnim indeksom. 
+4. Učitati članove niza. Ispisati članove niza sa neparnim ideksom. 
+5. Učitati članove niza. Ispisati članove niza sa ideksom koji nije djeljiv sa 4. 
+6. Učitati članove niza. Ispisati članove niza sa parnom vriednosti (djeljive sa 2). 
+7. Učitati članove niza. Ispisati članove niza koji nisu deljivi sa 3. 
+8. Učitati članove niza. Ispisati: pozitivne, nule pa negativne članove niza. 
+9. Učitati članove niza. Ispisati susedne članove niza čija je suma parna. 
+10. Učitati članove niza. Ispisati članove niza u obrnutom redosledu od unetog. 
+11. Učitati članove niza. Izračunati i ispisati sumu članova niza. 
+12. Učitati članove niza. Izračunati i ispisati sumu članova niza sa parnim indeksom. 
+13. Učitati članove niza. Izračunati i ispisati sumu članova niza sa neparnim indeksom. 
+14. Učitati članove niza. Izračunati i ispisati sumu članova niza čiji je indeks deljiv sa 3. 
+15. Učitati članove niza. Izračunati i ispisati sumu parnih članova. 
+16. Učitati članove niza. Izračunati i ispisati sumu neparnih članovova niza. 
+17. Izračunati sumu članova niza čija je vrednost u interval između [3,9]. 
+18. Učitati članove niza. Izračunati i ispisati proizvod članova niza. 
+19. Učitati članove niza. Izračunati i ispisati proizvod članova niza sa parnim indeksom. 
+20. Učitati članove niza. Izračunati i ispisati proizvod članova niza sa neparnim indeksom. 
+21. Učitati članove niza. Izračunati i ispisati proizvod parnih članova niza. 
+22. Množiti članove niza sve dok je proizvod manja od 541. 
+23. Učitati članove niza. Izračunati i ispisati broj članova niza sa parnim indeksom. 
+24. Učitati članove niza. Izračunati i ispisati broj članova niza sa neparnim indeksom. 
+25. Učitati članove niza. Izračunati i ispisati broj parnih i neparnih članova niza odvojeno. 
+26. Učitati članove niza. Izračunati i ispisati broj pozitvinih, nula i negativnih članova niza odvojeno. 
+27. Učitati članove niza. Izračunati i ispisati aritmetički sredinu svih članova niza.
+28. Učitati članove niza. Izračunati i ispisati aritmetičku sredinu članova niza sa parnim indeksom. 
+29. Učitati članove niza. Izračunati i ispisati aritmetički sredinu članova niza sa neparnim indeksom. 
