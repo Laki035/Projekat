@@ -54,4 +54,3 @@ void main()
     printf("\nniz posle transformacije niza\n");
     ispis_niza(a,n+1);
 }
-
