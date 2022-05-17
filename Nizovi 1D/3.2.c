@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<math.h>
 void unos_niza(int a[],int n)
 {
     int i;
@@ -17,28 +18,35 @@ void ispis_niza(int a[],int n)
          printf("%d ",a[i]);
     }
 }
-
-void transformacija_niza(int a[],int n)
+int min(int a,int b)
+{
+    if(a<b)
+        return a;
+    else
+        return b;
+}
+void kreiranje_niza_c(int a[],int b[],int c[],int n)
 {
     int i;
     for(i=0;i<n;i++)
-        if(i%2==0)
-            a[i]++;
-        else
-            a[i]--;
+        c[i]=min(a[i],b[i]);
 }
 
 void main()
 {
-    int n,x;
+    int n;
     printf("unesi koliko ima elemenata niza\n");
     scanf("%d",&n);
-    int a[n];
+    int a[n],b[n],c[n];
     unos_niza(a,n);
-    printf("niz pre transformacije niza\n");
+    printf("unesi elemente niza b\n");
+    unos_niza(b,n);
+    printf("\nelementi niza a\n");
     ispis_niza(a,n);
-    transformacija_niza(a,n);
-    printf("\nniz posle transformacije niza\n");
-    ispis_niza(a,n);
+    printf("\nelementi niza b\n");
+    ispis_niza(b,n);
+    kreiranje_niza_c(a,b,c,n);
+    printf("\nelemtni niza c \n");
+    ispis_niza(c,n);
 }
 
