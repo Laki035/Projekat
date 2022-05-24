@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-void unos_matrice(int n, int m,a[n][m])
+void unos_matrice(int n, int m,int a[n][m])
 {
 	int i,j;
 	for(i=0;i<n;i++)
@@ -12,7 +12,7 @@ void unos_matrice(int n, int m,a[n][m])
         }
     }
 }
-void ispis_matrie(int n, int m,a[n][m])
+void ispis_matrie(int n, int m,int a[n][m])
 {
 	int i,j;
 	for(i=0;i<n;i++)
@@ -23,7 +23,7 @@ void ispis_matrie(int n, int m,a[n][m])
         }
     }
 }
-void kreiraj_niz_od_matrice(int n, int m,a[n][m],b[m])
+void kreiraj_niz_od_matrice(int n, int m,int a[n][m],float b[m])
 {
     int i,j,s=0;
     double as;
@@ -37,7 +37,7 @@ void kreiraj_niz_od_matrice(int n, int m,a[n][m],b[m])
         s=0;
     }
 }
-void stampaj_niz(int m,double b[m])
+void stampaj_niz(int m,float b[m])
 {
     int i;
     for(i=0;i<m;i++)
@@ -49,7 +49,7 @@ int main()
     printf("unesi broj redova i broj kolona matrice\n");
     scanf("%d%d",&n,&m);
     int a[n][m],
-    double b[m];
+    float b[m];
     unos_matrice(n,m,a);
     ispis_matrie(n,m,a);
     kreiraj_niz_od_matrice(n,m,a,b);
