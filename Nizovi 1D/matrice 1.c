@@ -15,21 +15,22 @@ void unos_matrice(int n, int m,int a[n][m])
 void ispis_matrie(int n, int m,int a[n][m])
 {
 	int i,j;
+	printf("\n");
 	for(i=0;i<n;i++)
     {
         for(j=0;j<m;j++)
         {
-            printf("a[%d][%d]=%d",i,j,a[i][j]);
+            printf("a[%d][%d]=%d\t",i,j,a[i][j]);
         }
+        printf("\n");
     }
 }
 void kreiraj_niz_od_matrice(int n, int m,int a[n][m],float b[m])
 {
     int i,j,s=0;
-    double as;
     for(j=0;j<m;j++)
     {
-        for(i=0;i<n;j=i++)
+        for(i=0;i<n;i++)
         {
             s=s+a[i][j];
         }
@@ -40,15 +41,16 @@ void kreiraj_niz_od_matrice(int n, int m,int a[n][m],float b[m])
 void stampaj_niz(int m,float b[m])
 {
     int i;
+    printf("\n");
     for(i=0;i<m;i++)
-        printf("%.2f",b[i]);
+        printf("%.2f ",b[i]);
 }
 int main() 
 {
     int n,m;
     printf("unesi broj redova i broj kolona matrice\n");
     scanf("%d%d",&n,&m);
-    int a[n][m],
+    int a[n][m];
     float b[m];
     unos_matrice(n,m,a);
     ispis_matrie(n,m,a);
