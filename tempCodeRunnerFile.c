@@ -17,26 +17,21 @@ void ispis_niza(int a[],int n)
          printf("a[%d]=%d\t",i,a[i]);
     }
 }
-void max_parni_vs_max_neparni(int n,int a[])
+void prvi_i_poslednji_pozitivni(int n,int a[])
 {
-    int m,i,mp=a[0],mn=a[1];
-    for(i=2;i<n;i+=2)
+    int m,i,j,t,b=2;
+    for(i=0;i<n;i++)
     {
-        if(a[i]>mp)
-            mp=a[i];
+        if(a[i]>0)
+        {
+            printf("%d ",a[i]);
+            b--;
+        }
+        if(b==0)
+            break;
     }
-    for(i=3;i<n;i+=2)
-    {
-        if(a[i]>mn)
-            mn=a[i];
-    }
-    if(mp==mn)
-        printf("maximumi su jednaki");
-    else
-        if(mp>mn)
-            printf("veci je maximum parnih");
-        else
-            printf("veci je maximum neparnih");
+    if(b==2)
+        printf("nema u nizu pozitivnih brojeva");
 }
 void main()
 {
@@ -46,5 +41,5 @@ void main()
     int a[n];
     unos_niza(a,n);
     ispis_niza(a,n);
-    max_parni_vs_max_neparni(n,a);
+    prvi_i_poslednji_pozitivni(n,a);
 }

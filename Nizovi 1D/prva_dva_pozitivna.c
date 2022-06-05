@@ -17,29 +17,20 @@ void ispis_niza(int a[],int n)
          printf("a[%d]=%d\t",i,a[i]);
     }
 }
-void prvi_i_poslednji_pozitivni(int n,int a[])
+void prvi_dva_pozitivna(int n,int a[])
 {
-    int m,i,j,t,indikator=0;
-    for(i=0;i<n-1;i++)
-        for(j=i;j<n;j++)
-        {
-            if(a[j]<a[i])
-            {
-                t=a[i];
-                a[i]=a[j];
-                a[j]=t;
-            }
-        }
+    int m,i,j,t,b=2;
     for(i=0;i<n;i++)
     {
         if(a[i]>0)
         {
-            printf("%d %d",a[i],a[n-1]);
-            indikator=1;
-            break;
+            printf("%d ",a[i]);
+            b--;
         }
+        if(b==0)
+            break;
     }
-    if(indikator==0)
+    if(b==2)
         printf("nema u nizu pozitivnih brojeva");
 }
 void main()
@@ -50,5 +41,5 @@ void main()
     int a[n];
     unos_niza(a,n);
     ispis_niza(a,n);
-    prvi_i_poslednji_pozitivni(n,a);
+    prva_dva_pozitivna(n,a);
 }
