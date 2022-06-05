@@ -17,17 +17,22 @@ void ispis_niza(int a[],int n)
          printf("a[%d]=%d\t",i,a[i]);
     }
 }
-void max_niza(int n,int a[])
+void index_najmanjeg_elementa_niza(int n,int a[])
 {
-    int m,i;
+    int m,i,indexnajmanjeg=0;
     m=a[0];
     for(i=1;i<n;i++)
     {
-        if(a[i]>m)
+        if(a[i]<m)
+        {
             m=a[i];
+            indexnajmanjeg=i;
+        }
+         
     }
-    printf("\nmax=%d",m);
+     printf("\nnajmanji element je %d i njegov index je%d",m,indexnajmanjeg);
 }
+
 void main()
 {
     int n;
@@ -36,5 +41,5 @@ void main()
     int a[n];
     unos_niza(a,n);
     ispis_niza(a,n);
-    max_niza(n,a);
+    index_najmanjeg_elementa_niza(n,a);
 }
