@@ -1,58 +1,45 @@
-#include <stdio.h>
-#include <stdlib.h>
-void unos_matrice(int n, int m,a[n][m])
-{
-	int i,j;
-	for(i=0;i<n;i++)
-    {
-        for(j=0;j<m;j++)
-        {
-            printf("a[%d][%d]=",i,j) ;
-            scanf("%d",&a[i][j]) ;
-        }
-    }
-}
-void ispis_matrie(int n, int m,a[n][m])
-{
-	int i,j;
-	for(i=0;i<n;i++)
-    {
-        for(j=0;j<m;j++)
-        {
-            printf("a[%d][%d]=%d",i,j,a[i][j]);
-        }
-    }
-}
-void kreiraj_niz_od_matrice(int n, int m,a[n][m],b[m])
-{
-    int i,j,s=0;
-    double as;
-    for(j=0;j<m;j++)
-    {
-        for(i=0;i<n;j=i++)
-        {
-            s=s+a[i][j];
-        }
-        b[j]=1.0*s/n;
-        s=0;
-    }
-}
-void stampaj_niz(int m,double b[m])
+#include<stdio.h>
+#include<stdlib.h>
+void unos_niza(int a[],int n)
 {
     int i;
-    for(i=0;i<m;i++)
-        printf("%.2f",b[i]);
+    for(i=0;i<n;i++)
+    {
+         printf("unesi %d. element niza\n",i+1);
+         scanf("%d",&a[i]);
+    }
 }
-int main() 
+void ispis_niza(int a[],int n)
 {
-    int n,m;
-    printf("unesi broj redova i broj kolona matrice\n");
-    scanf("%d%d",&n,&m);
-    int a[n][m],
-    double b[m];
-    unos_matrice(n,m,a);
-    ispis_matrie(n,m,a);
-    kreiraj_niz_od_matrice(n,m,a,b);
-    stampaj_niz(m,b);
-	return 0;
+    int i;
+    for(i=0;i<n;i++)
+    {
+         printf("a[%d]=%d\t",i,a[i]);
+    }
+}
+void prvi_negativni(int n,int a[])
+{
+    int m,i,indikator=0;
+    for(i=0;i<n;i++)
+    {
+        if(a[i]<0)
+        {
+            printf("a[%d]=%d\t",i,a[i]);
+            indikator=1;
+            break;
+        }
+    }
+     if(indikator==0)
+            printf("u unetom nizu nema elemenata koji su negativni");
+}
+
+void main()
+{
+    int n;
+    printf("unesi koliko ima elemenata niza\n");
+    scanf("%d",&n);
+    int a[n];
+    unos_niza(a,n);
+    ispis_niza(a,n);
+    prvi_negativni(n,a);
 }
