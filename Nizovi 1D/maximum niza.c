@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-void unos_niza(int n,int a[n])
+void unos_niza(int a[],int n)
 {
     int i;
     for(i=0;i<n;i++)
@@ -14,31 +14,27 @@ void ispis_niza(int a[],int n)
     int i;
     for(i=0;i<n;i++)
     {
-         printf("%d ",a[i]);
+         printf("a[%d]=%d\t",i,a[i]);
     }
 }
-
-void transformacija_niza(int a[],int n)
+void max(int n,int a[])
 {
-    int i;
-    for(i=0;i<n;i++)
-        if(i%2==0)
-            a[i]++;
-        else
-            a[i]--;
+    int m,i;
+    m=a[0];
+    for(i=1;i<n;i++)
+    {
+        if(a[i]>m)
+            m=a[i];
+    }
+    printf("\nmax=%d",m);
 }
-
 void main()
 {
-    int n,x;
+    int n;
     printf("unesi koliko ima elemenata niza\n");
     scanf("%d",&n);
     int a[n];
     unos_niza(a,n);
-    printf("niz pre transformacije niza\n");
     ispis_niza(a,n);
-    transformacija_niza(a,n);
-    printf("\nniz posle transformacije niza\n");
-    ispis_niza(a,n);
+    max(n,a);
 }
-

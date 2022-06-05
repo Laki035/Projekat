@@ -14,37 +14,27 @@ void ispis_niza(int a[],int n)
     int i;
     for(i=0;i<n;i++)
     {
-         printf("%d ",a[i]);
+         printf("a[%d]=%d\t",i,a[i]);
     }
 }
-void swap(int a[], int n, int x)
+void max(int n,int a[])
 {
-    int t;
-    t=a[x];
-    a[x]=a[x+1];
-    a[x+1]=t;
-}
-void transformacija_niza(int a[],int n)
-{
-    int i;
-    for(i=0;i<n;i=i+2)
+    int m,i;
+    m=a[0];
+    for(i=1;i<n;i++)
     {
-        swap(a,n,i);
+        if(a[i]>m)
+            m=a[i];
     }
+    printf("\nmax=%d",m);
 }
-
-
 void main()
 {
-    int n,x;
+    int n;
     printf("unesi koliko ima elemenata niza\n");
     scanf("%d",&n);
     int a[n];
     unos_niza(a,n);
-    printf("niz pre transformacije niza\n");
     ispis_niza(a,n);
-    transformacija_niza(a,n);
-    printf("\nniz posle transformacije niza\n");
-    ispis_niza(a,n);
-}
-
+    max(n,a);
+    }
