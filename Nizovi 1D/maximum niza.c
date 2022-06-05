@@ -17,7 +17,7 @@ void ispis_niza(int a[],int n)
          printf("a[%d]=%d\t",i,a[i]);
     }
 }
-void max(int n,int a[])
+void max_niza(int n,int a[])
 {
     int m,i;
     m=a[0];
@@ -36,5 +36,5 @@ void main()
     int a[n];
     unos_niza(a,n);
     ispis_niza(a,n);
-    max(n,a);
+    max_niza(n,a);
 }
