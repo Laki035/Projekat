@@ -9,7 +9,7 @@ void unos_niza(int a[],int n)
          scanf("%d",&a[i]);
     }
 }
-void ispis_niza(int n,int a[])
+void ispis_niza(int a[],int n)
 {
     int i;
     for(i=0;i<n;i++)
@@ -34,22 +34,11 @@ void sortiraj_rastuce(int n, int a[n])
 void izbrisi_element_na_zeljenoj_poziciji(int n,int a[])
 {
     int i,j,pozicija;
-   sortiraj_rastuce(n,a);
-   ispis_niza(n,a);
-    for(i=0;i<n;i++)
-    {
-        if(a[i]==a[i+1])
-        {
-            for(j=i;j<n;j++)
-            {
-                a[j]=a[j+1];
-            }
-            n--;
-            i--;
-        }
-    }
-    printf("niz nakon izbacenih duplikata\n");
-    ispis_niza(n,a);
+   // sortiraj_rastuce(n,a);
+   printf("unesi index elementa koji zelis da izbacis iz niza\n");
+   scanf("%d",&pozicija);
+   for(i=pozicija;i<n;i++)
+       a[i]=a[i+1];
 }
 void main()
 {
@@ -58,7 +47,7 @@ void main()
     scanf("%d",&n);
     int a[n];
     unos_niza(a,n);
-    ispis_niza(n,a);
+    ispis_niza(a,n);
     izbrisi_element_na_zeljenoj_poziciji(n,a);
-    //ispis_niza(n-1,a);
+    ispis_niza(a,n-1);
 }

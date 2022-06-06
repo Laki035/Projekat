@@ -60,5 +60,4 @@ void main()
     unos_niza(a,n);
     ispis_niza(n,a);
     izbrisi_element_na_zeljenoj_poziciji(n,a);
-    //ispis_niza(n-1,a);
 }
